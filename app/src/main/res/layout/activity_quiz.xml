@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Frage 00 / 00"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <!-- Spacer -->
         <View
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LF00-0000"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -115,19 +115,32 @@
                 android:id="@+id/resultText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="top|center_horizontal"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <!-- Richtige Antwort -->
+            <TextView
+                android:id="@+id/correctAnswerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
 
             <!-- Erklärungstext -->
             <TextView
                 android:id="@+id/explanationText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="top|center_horizontal"
                 android:textAlignment="center"
-                android:textSize="20sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:padding="16dp" />
 
         </LinearLayout>

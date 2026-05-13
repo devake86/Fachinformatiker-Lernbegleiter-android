@@ -366,6 +366,7 @@ public class QuizActivity extends AppCompatActivity {
 
         // Views aus dem XML holen (NICHT neu erzeugen!)
         TextView resultTextView = findViewById(R.id.resultText);
+        TextView correctAnswerTextView = findViewById(R.id.correctAnswerText);
         TextView explanationTextView = findViewById(R.id.explanationText);
 
         // Ist Eingabe richtig? true oder false
@@ -375,8 +376,9 @@ public class QuizActivity extends AppCompatActivity {
 
         // Ausgabetexte
         resultTextView.setText(correct ? "+ RICHTIG +" : "- FALSCH -");
+        correctAnswerTextView.setText(correct ? "\n" : "Richtige Antwort:\n" + engine.getCurrentQuestion().getCorrectAnswerText());
         explanationTextView.setText(
-                engine.getCurrentQuestion().getExplanation()
+                "Erklärung:\n" + engine.getCurrentQuestion().getExplanation()
         );
 
         // Wenn Frage die letzte Frage war
