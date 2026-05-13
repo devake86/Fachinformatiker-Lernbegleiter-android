@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Angepasstes Day Theme. -->
+    <style name="Theme.ProjectFIQAandroid"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <item name="android:statusBarColor">#E0E0E0</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:navigationBarColor">#E0E0E0</item>
+
+        <item name="colorSurfaceVariant">#E0E0E0</item>
+        <item name="colorOnSurface">#000000</item>
+
+    </style>
+
+</resources>
