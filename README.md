@@ -2,6 +2,27 @@
 
 An Android quiz application built with Java, designed for learning and preparing for the IHK final exam (AP1).
 
+For a runnable example (.apk), see the **v1.0-beta release** in the Releases section.
+
+---
+
+## Screenshot
+
+Preview of the quiz interaction:
+
+![Quiz Loop](images/screenshot_quiz_loop_android_beta.png)
+
+*Example quiz interaction including answer selection and evaluation (v1.0-beta)*
+
+---
+
+## Status
+Current version: v1.0-dev
+
+Last stable release: v1.0-beta
+
+Designed for Android (.apk).
+
 ---
 
 ## Project Overview
@@ -28,6 +49,9 @@ Note:
 - Working “20 Questions Mode”
 - Randomized selection of 20 questions per learning field
 - Question format: True/False or 1 out of 4
+- Includes an answer confirmation step to prevent accidental selections and improve usability.
+- The Android version supports both light and dark mode.
+- The action buttons follow a custom style matching the answer buttons and adapt to both light and dark mode.
 
 ---
 
@@ -57,6 +81,9 @@ Priority (based on user feedback):
 - Remove extra result screen after answering
 - Optional review of incorrectly answered questions after a round
 
+Design decisions:
+- Kept answer confirmation button to prevent accidental selections (based on user feedback)
+
 General:
 - Refactor desktop version to match Android structure
 - Separate main menu from quiz flow for better parity
@@ -80,12 +107,3 @@ User testing:
 - Tested with classmates (learning field 9 questions)
 - Overall positive feedback
 - UI improvements requested
-
----
-
-### v0.1-prototype (desktop)
-
-- Implemented core quiz classes
-- Created JSON structure and loader
-- Implemented quiz logic in engine
-- Basic console output for testing in main class
