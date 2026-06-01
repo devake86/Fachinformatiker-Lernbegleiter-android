@@ -1,55 +1,70 @@
 # projectFIQA (Android)
 
-An Android quiz application built with Java, designed for learning and preparing for the IHK final exam (AP1).
+A Java-based quiz application for Android built for learning during commutes to prepare for the IHK FISI/FIAE final exams (AP1 / AP2) with JSON-/Gson-based question handling.
 
-For a runnable example (.apk), see the **v1.0-beta release** in the Releases section.
+---
+
+## Download
+
+[**Android APK (v1.0-beta2)**]
+(link apk)
 
 ---
 
 ## Screenshot
 
-Preview of the quiz interaction:
+Preview of the UI Flow:
 
-![Quiz Loop](images/screenshot_quiz_loop_android_beta.png)
+![UI Flow](images/screenshot_ui_flow_android_v1.0-beta2.png)
 
-*Example quiz interaction including answer selection and evaluation (v1.0-beta)*
+*Example the UI Flow from Main menu to Resultscreen (v1.0-beta2)*
 
 ---
 
 ## Status
 Current version: v1.0-dev
 
-Last stable release: v1.0-beta
+Last stable release: v1.0-beta2
 
 Designed for Android (.apk).
+
+To run:
+- Requires SDK 26 (Android 8.0 Oreo) (or compatible)
 
 ---
 
 ## Project Overview
 
-This application is the mobile counterpart of the projectFIQA desktop version.
+This project was created as an additional learning tool during retraining as a *Fachinformatiker*.
+
+A matching Desktop version was developed with similar structure and logic to simplify maintenance and further development.
 
 Motivation:
-- Learning during commuting should be possible in a more practical way
-- Replace inefficient “dead time” (e.g. reading books on the train)
+- Java and OOP concepts were not deeply covered in the official learning fields
+- Need for a more mobile, efficient and interactive way of learning to replace slow and bulky "book-learning" methods or handling flashcards on the go
+- Convert daily "dead travel time" during commutes into a practical exam preparation while ensuring privacy in crowded public transport
 
 Solution:
-- Mobile quiz app for Android devices
-- Designed for quick learning sessions anywhere
-- Similar logic and structure as the desktop version
+- Mobile learning app for Android devices
+- Allows easy repetition and quick learning sessions anywhere
+- Reusable Java Core-logic and structure for use on different platforms
 
-Note:
-- UI and implementation differ due to platform constraints
-- Core logic and flow are kept as similar as possible for easier maintenance
+
 
 ---
 
 ## Current Status
 
-- Working “20 Questions Mode”
-- Randomized selection of 20 questions per learning field
-- Question format: True/False or 1 out of 4
+- Reworked the question loop for a better UI and UX:
+  - Every question loop is now on one screen. choose answer button (chosen answer is highlighted; rest has lower opacity) -> confirmation button pops up -> by pressing the confirmation button the answer button turns green if correct answer is given or red for wrong answer and the correct answer turn greens (the rest stays at lower opacity) -> explanation pops up between the question text and the answer buttons -> confirmation button changes text and leads to next question or quiz evaluation if it is the last question of the round.
+  - Ommited potential questions with pictures due to not beeing used much if at all and potential scaling problem for little outcome; diagramms and excel questions are better learned through different means but theoretical questions will still be used; code snippet questions can be properly implemented via JSONs.
+  - Changed the overall font to JetBrainsMono to support perfectly aligned JSON code snippet indents and give the app a more techy vibe.
+- Working core-logic for AP1 mode (for now, Proof of Concept with Dummy-questions)
+- Working “20 Questions Mode” for either mixed questions, abbreviations and technical terms mode.
+- Question format: 1 out of 4 questions and negated 1 out of 4 questions to simulate multiple choice while not requiring more complex logic to achieve a similar outcome (ommited True/False questions as they are not as beneficial for learning purposes as 1 out of 4 questions, but kept the code in for now)
+- Implemented a Session-State to combat repeat questions as long as new round are played through "Neue Runde" in the result screen instead of "Track correctly answered questions using IDs and timestamps" and "Reintroduce questions into the pool after 2–3 days (learning curve)" as a simple solution based on daily use cases (only a couple of round per day).
 - Includes an answer confirmation step to prevent accidental selections and improve usability.
+
 - The Android version supports both light and dark mode.
 - The action buttons follow a custom style matching the answer buttons and adapt to both light and dark mode.
 
@@ -57,18 +72,36 @@ Note:
 
 ## Goals
 
-- Implement AP1 exam simulation mode
-- Improve UI based on user feedback
-- Expand question database with high-quality exam-oriented content
+### Minimum Goals
+
+- Implement an AP1 mode:
+  - Combines all topics from learning fields 1–6 with a weighted question count for each depending on the number of weeks each learning field was taught times three for 36 questions total which is the average question amount of a typical learning objective verification.
+
+- Add repetition mode:
+  - 20 Questions Mode for individual learning fields with a mixed questions, abbreviations and technical terms mode.
+  - Add a scrollable selection screen for the different learning field modes after choosing "20 Fragen"
+
+- Integrate user feedback from testing phases
+
+---
+
+### Optional Goals
+
+- AP2 mode (learning fields 1–12)
+  - intended for both FIAE and FISI tracks
+  - only if time permits (significantly higher workload)
 
 ---
 
 ## Learning Objectives
 
+- Improve understanding of OOP
+- Deepen and apply Java knowledge in real-world scenario
 - Learn Android development environment
 - Understand mobile UI design
+- Work with JSON data structures
+- Build a practical, usable learning tool for real exam preparation
 - Maintain cross-platform project structure
-- Apply Java knowledge in real-world scenario
 
 ---
 
@@ -76,23 +109,44 @@ Note:
 
 ### v1.0-dev (desktop & android)
 
+TODO:
+
 Priority (based on user feedback):
+- Optional repetition of incorrectly answered questions after a round
+
+General:
+- Add at least 40 high-quality exam-oriented questions per topic LF1-9 to have at least 2 rounds of 20 Questions and 4 rounds of AP1 Mode for a v1.0-mvp-release
+- Add a scrollable submenu for all topics for at least the mixed questions mode
+
+If time:
+- If time add soft hyphens for json questions and explanations for a smoother text line break
+- If time make it so the first scrollable submenu button starts at the height where the first answer button would be through autoscroll implementation to improve onehanded thumb navigation but overall the menu should use the whole screen
+- If time add abbreviations and technical terms mode for every topic with at least 40 questions
+- If time add extend mechanic to the LF buttons in the submenu to open up a choice between buttons for mixed questions, abbreviations and technical terms mode per LF.
+- If time add a copy function for the question id in the status bar
+- If time make android version a fixed vertical mode only (no landscape mode)
+
+Future considerations:
+- Consider adding statistics / correctness percentage display
+
+---
+
+### v1.0-beta2 (desktop & android)
+
+IMPLEMENTED:
+
+- Gradle as build tool for Desktop Port to ensure consistency with the Android Version
+- Refactored the JavaFX Desktop Port to use FXML to ensure consistency with the Android Version
+- Separated the main menu of the Desktop Port from the quiz flow for better parity with the Android Version
 - Immediate feedback on answer buttons (green/red)
 - Remove extra result screen after answering
-- Optional review of incorrectly answered questions after a round
+- Implemented a Session-State to combat repeat questions as long as new round are played through "Neue Runde" in the result screen
+- Implement AP1 mode with JSON-based question logic
+
+- Added a small creator easter egg
 
 Design decisions:
 - Kept answer confirmation button to prevent accidental selections (based on user feedback)
-
-General:
-- Refactor desktop version to match Android structure
-- Separate main menu from quiz flow for better parity
-- Implement AP1 mode with JSON-based question logic
-- Add at least 30 high-quality exam-oriented questions per subtopic (LF1–LF6)
-- Add repetition mode for individual learning fields
-- Track correctly answered questions using IDs and timestamps
-- Reintroduce questions into the pool after 2–3 days (learning curve)
-- Consider adding statistics / correctness percentage display
 
 ---
 

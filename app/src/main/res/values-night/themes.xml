@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Angepasstes Night Theme -->
-    <style name="Theme.ProjectFIQAandroid"
+    <style name="Theme.projectFIQA"
         parent="Theme.Material3.DayNight.NoActionBar">
 
         <item name="colorPrimary">#1E1F22</item>
@@ -15,6 +15,11 @@
 
         <item name="colorSurfaceVariant">#1E1F22</item>
         <item name="colorOnSurface">#FFFFFF</item>
+
+        <item name="android:fontFamily">@font/jetbrainsmono</item>
+
+        <item name="colorCustomButton">#5E5E5E</item>
+        <item name="colorOnCustomButton">#FFFFFF</item>
 
     </style>
 
