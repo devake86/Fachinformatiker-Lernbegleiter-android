@@ -6,8 +6,7 @@ A Java-based quiz application for Android built for learning during commutes to 
 
 ## Download
 
-[**Android APK (v1.0-beta2)**]
-(link apk)
+[**Android APK (v1.0-beta2)**](https://github.com/devake86/projectFIQA-android/releases/download/v1.0-beta2/projectFIQA-android_v1-beta2a.apk)
 
 ---
 
@@ -22,7 +21,7 @@ Preview of the UI Flow:
 ---
 
 ## Status
-Current version: v1.0-dev
+Current version: v1.0-dev2
 
 Last stable release: v1.0-beta2
 
