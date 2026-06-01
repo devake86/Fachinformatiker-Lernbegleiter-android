@@ -1,16 +1,10 @@
 # projectFIQA (Android)
 
-A Java-based quiz application for Android built for learning during commutes to prepare for the IHK FISI/FIAE final exams (AP1 / AP2) with JSON-/Gson-based question handling.
+A Java-based quiz application for Android built for learning during commutes to prepare for the IHK FISI/FIAE final exams (AP1 / AP2) with JSON-/Gson-based question handling. [**Android APK (v1.0-beta2)**](https://github.com/devake86/projectFIQA-android/releases/download/v1.0-beta2/projectFIQA-android_v1-beta2a.apk)
 
 ---
 
-## Download
-
-[**Android APK (v1.0-beta2)**](https://github.com/devake86/projectFIQA-android/releases/download/v1.0-beta2/projectFIQA-android_v1-beta2a.apk)
-
----
-
-## Screenshot
+## Screenshots
 
 Preview of the UI Flow:
 
@@ -106,7 +100,7 @@ Solution:
 
 ## Changelog
 
-### v1.0-dev (desktop & android)
+### v1.0-dev2 (desktop & android)
 
 TODO:
 
