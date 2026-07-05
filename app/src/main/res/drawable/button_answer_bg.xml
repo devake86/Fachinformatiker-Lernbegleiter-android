@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gedrückt -->
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/button_answer_pressed_bg" />
+
+    <!-- Hover / Maus / Emulator -->
+    <item
+        android:state_hovered="true"
+        android:drawable="@drawable/button_answer_hover_bg" />
+
+    <!-- Normal -->
+    <item
+        android:drawable="@drawable/button_answer_normal_bg" />
+
+</selector>

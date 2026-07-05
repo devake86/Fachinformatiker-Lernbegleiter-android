@@ -1,21 +1,21 @@
 <resources>
 
     <!-- App-Hintergrund -->
-    <color name="app_background">#D6D0C2</color>
+    <color name="app_background">#1E1F22</color>
 
-    <!-- Neutrale Buttons Light -->
-    <color name="button_primary_start">#F0ECE3</color>
-    <color name="button_primary_center">#E7E1D6</color>
-    <color name="button_primary_end">#DCD4C6</color>
-    <color name="button_primary_stroke">#B5AA99</color>
+    <!-- Neutrale Buttons Dark -->
+    <color name="button_primary_start">#3A3B3F</color>
+    <color name="button_primary_center">#2F3034</color>
+    <color name="button_primary_end">#25262A</color>
+    <color name="button_primary_stroke">#111216</color>
 
     <!-- Text -->
-    <color name="button_text">#1E1F22</color>
+    <color name="button_text">#EDEEF2</color>
     <color name="button_signal_text">#EDEEF2</color>
-    <color name="app_text">#1E1F22</color>
+    <color name="app_text">#EDEEF2</color>
 
     <!-- Hover / Pressed / Selected -->
-    <color name="button_focus_stroke">#0078D4</color>
+    <color name="button_focus_stroke">#E8E8E8</color>
 
     <!-- Richtig -->
     <color name="button_correct_start">#2E8B3C</color>
@@ -30,10 +30,10 @@
     <color name="button_wrong_stroke">#EF5350</color>
 
     <!-- Scrollbar -->
-    <color name="scrollbar_thumb_start">#F0ECE3</color>
-    <color name="scrollbar_thumb_center">#E7E1D6</color>
-    <color name="scrollbar_thumb_end">#DCD4C6</color>
-    <color name="scrollbar_thumb_stroke">#B5AA99</color>
+    <color name="scrollbar_thumb_start">#3A3B3F</color>
+    <color name="scrollbar_thumb_center">#2F3034</color>
+    <color name="scrollbar_thumb_end">#25262A</color>
+    <color name="scrollbar_thumb_stroke">#111216</color>
     <color name="scrollbar_track">#00000000</color>
 
 </resources>

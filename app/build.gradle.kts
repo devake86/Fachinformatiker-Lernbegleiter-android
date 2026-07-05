@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "app.projectfiqa"
+    namespace = "app.filb"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "app.projectfiqa"
+        applicationId = "app.filb"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

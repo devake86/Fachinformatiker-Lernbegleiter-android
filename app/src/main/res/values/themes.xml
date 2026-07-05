@@ -1,25 +1,29 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!-- Angepasstes Day Theme. -->
-    <style name="Theme.projectFIQA"
+    <style name="Theme.FiLb"
         parent="Theme.Material3.DayNight.NoActionBar">
 
-        <item name="colorPrimary">#E0E0E0</item>
-        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimary">@color/app_background</item>
+        <item name="colorOnPrimary">@color/app_text</item>
 
-        <item name="android:statusBarColor">#E0E0E0</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:colorBackground">@color/app_background</item>
+
+        <item name="android:statusBarColor">@color/app_background</item>
         <item name="android:windowLightStatusBar">true</item>
 
         <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:navigationBarColor">#E0E0E0</item>
+        <item name="android:navigationBarColor">@color/app_background</item>
 
-        <item name="colorSurfaceVariant">#E0E0E0</item>
-        <item name="colorOnSurface">#000000</item>
+        <item name="colorSurfaceVariant">@color/app_background</item>
+        <item name="colorOnSurface">@color/app_text</item>
 
         <item name="android:fontFamily">@font/jetbrainsmono</item>
+        <item name="fontFamily">@font/jetbrainsmono</item>
 
-        <item name="colorCustomButton">#E0E0E0</item>
-        <item name="colorOnCustomButton">#000000</item>
+        <item name="colorCustomButton">#0D47A1</item>
+        <item name="colorOnCustomButton">#EDEEF2</item>
 
     </style>
 

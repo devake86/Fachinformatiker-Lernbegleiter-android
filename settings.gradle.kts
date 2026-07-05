@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "projectFIQAandroid"
+rootProject.name = "FiLb"
 include(":app")

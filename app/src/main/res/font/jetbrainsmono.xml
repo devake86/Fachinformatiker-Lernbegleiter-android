@@ -11,4 +11,14 @@
         android:fontWeight="400"
         android:font="@font/jetbrainsmono_italic" />
 
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/jetbrainsmono_bold" />
+
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="700"
+        android:font="@font/jetbrainsmono_bolditalic" />
+
 </font-family>
