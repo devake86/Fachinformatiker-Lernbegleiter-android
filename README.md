@@ -6,16 +6,13 @@ Die Android-Version nutzt eine interne SQLite-Datenbank zur lokalen Speicherung 
 
 **Hinweis:** Diese App ist kein offizielles Angebot der IHK, einer Berufsschule oder einer vergleichbaren Institution. Es handelt sich um ein privates Lern- und Entwicklungsprojekt. Die enthaltenen Fragen sind keine offiziellen IHK-Prüfungsaufgaben und ersetzen keine offiziellen Lern- oder Prüfungsmaterialien.
 
-[**Android APK (v1.0-rc1)**](https://github.com/devake86/Fachinformatiker-Lernbegleiter-android/releases/tag/v1.0-rc1)
+[**Android APK (v1.0-rc1)**](https://github.com/devake86/Fachinformatiker-Lernbegleiter-android/releases/download/v1.0-rc1/FiLb-android_v1.0-rc1.apk)
 
 ---
 
 ## Screenshots
 
 Vorschau des Android-Hauptmenüs in Dark- und Light-Mode:
-
-<details open>
-<summary>UI/UX Vorschau anzeigen</summary>
 
 [![Android Hauptmenü Dark/Light](images/main_dark_light_android_v1.0-rc1.png)](images/main_dark_light_android_v1.0-rc1.png)
 
