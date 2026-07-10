@@ -12,11 +12,32 @@ Die Android-Version nutzt eine interne SQLite-Datenbank zur lokalen Speicherung 
 
 ## Screenshots
 
-Vorschau des Android-Hauptmenüs in Dark- und Light-Mode:
+<details open>
+<summary>Android-Hauptmenü in Dark- und Light-Mode anzeigen</summary>
 
-[![Android Hauptmenü Dark/Light](images/main_dark_light_android_v1.0-rc1.png)](images/main_dark_light_android_v1.0-rc1.png)
+[images/main_dark_light_android_v1.0-rc1.png](images/main_dark_light_android_v1.0-rc1.png)
 
 *Android-Hauptmenü in Dark- und Light-Mode mit Schnellzugriffen auf „Quiz Auswahl“, „Letzte Auswahl“ und „Fehlertraining“. (v1.0-rc1).*
+
+</details>
+
+<details>
+<summary>Light-Mode Menüflow anzeigen</summary>
+
+[images/menuflow_light_android_v1.0-rc1.png](images/menuflow_light_android_v1.0-rc1.png)
+
+*Beispielhafter Light-Mode-Menüflow vom Hauptmenü über Quiz Auswahl, Fragenfeld Auswahl und Fragenpaket Auswahl. (v1.0-rc1).*
+
+</details>
+
+<details>
+<summary>Dark-Mode Quizflow anzeigen</summary>
+
+[images/quizflow_dark_android_v1.0-rc1.png](images/quizflow_dark_android_v1.0-rc1.png)
+
+*Beispielhafter Dark-Mode-Quizflow mit Antwort Auswahl, Bestätigung, visuellem Feedback, Erklärung und Ergebnisbildschirm. (v1.0-rc1).*
+
+</details>
 
 ---
 
